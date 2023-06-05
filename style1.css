@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-family: "Shrikhand", cursive;
+    background-color: white;
+    color: black;
+    max-width: 768px;
+  }
+
+ /**header**/
+
+
+ * {
+    margin: 0;
+  }
+  
+#logo {
+    width: 162px;
+    padding-top: 14px;
+    padding-bottom: 5px;
+}
+.retour {
+  padding-left: 23px;
+  display: flex;
+  justify-content: left;
+}
+.logo {
+  padding-left: 85px;
+}
+
+.navigation {
+  width: 100%;
+  height: 63px;
+    display: flex;
+    flex-direction: row;
+    /**justify-content: space-around;**/
+    align-items: center;
+}
+
+.photo img {
+    width: 375px;
+    height: 275px;
+}
+
+/** menu **/
+.menu {
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 375px;
+  height: 1000px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -40px;
+}
+h1 {
+  font-size: 27px;
+  font-weight: 400;
+  padding-left: 17px;
+  padding-top: 32px;
+}
+
+
+/**footer**/
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 186px;
+  background-color: #353535;
+  color: white;
+  align-content: flex-start;
+  justify-content: center;
+  padding-left: 25px;
+}
+
+.footer-txt {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  font-family: shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer-txt a {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-logo a {
+  font-weight: 500;
+  padding-left: 10px;
+}
+.footer-logo p {
+  padding-bottom: 5px;
+}
+.footer-logo i {
+  font-size: small;
+}
+.footer-small {
+  display: flex;
+  flex-direction: column;
+}
+.footer-small a {
+  padding-bottom: 6px;
+}
+
