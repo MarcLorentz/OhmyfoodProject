@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
+  box-shadow: rgba(0, 0.5, 0.5, 0.15) 0px 2px 4px 0px;
 }
 .navigation {
   display: flex;
@@ -61,16 +61,16 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   color: white;
-  background: linear-gradient(180deg, #9356dc, #ff79da);
+  background: linear-gradient(180deg, #ff79da, #9356dc);
   padding: 13px 18.75px;
   border-radius: 25px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 .search a:hover {
     /* Add shadows to create the "card" effect */
-    box-shadow:0px 8px 10px rgba(0, 0, 0, 0.2);
-    transition: 0.2s;
-    opacity: 0.8;
+    box-shadow:0px 8px 10px rgba(0, 0, 0, 0.35);
+    transition: 400ms;
+    opacity: 0.7;
 }
 
 .cta {
@@ -93,7 +93,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
   gap: 25px;
 
 }
@@ -147,8 +147,15 @@ h2 {
   height: 24px;
   border-radius: 12px;
   background-color: #9356dc;
-  text-align: center;
+  margin-right: -10px;
 }
+.fonctionnement h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
 .fonctionnement p {
   width: 322.49px;
   height: 73.38px;
@@ -163,7 +170,7 @@ h2 {
 
 .restaurants {
   width: 100%;
-  height: 1150px;
+  height: 1220px;
   background-color: #f6f6f6;
   font-family: roboto;
   display: flex;
@@ -179,27 +186,48 @@ h4 {
   font-size: 24px;
   font-weight: 700;
 }
-.heart__logo {
-  display: flex;
+.heart__logo{
+  position: relative;
+}
+.heart__logo--empty {
+  position: absolute;
   padding-right: 25px;
   font-size: 1.5em;
   color: black ;
 }
-.heart__logo--empty :hover{
-  display: none;
+.heart__logo:hover .heart__logo--empty {
+  opacity: 0;
 }
-.heart__logo--full  {
+.heart__logo--full {
   padding-right: 25px;
+  opacity: 0;
   font-size: 1.5em;
-  background-clip: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+transition: all 400ms;
 }
 
+/**.text i{
+  background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        
+}**/
+.heart__logo:hover .heart__logo--full  {
+  opacity: 1;
+
+  /**font-size: 1.5em;
+  background-clip: linear-gradient(180deg, #FF79DA, #9356DC);**/
+}
+.card-content {
+  position: relative;
+}
 
 .bandeau {
   display: flex;
   align-items: center;
   flex-direction: row;
-
   justify-content: space-between;
 }
 
@@ -213,6 +241,27 @@ h4 {
 .card img {
   object-fit: cover;
 }
+
+.encart {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 80px; 
+  height: 29px;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+/**.encart p {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}**/
+
 .card a {
   text-decoration: none;
 }
