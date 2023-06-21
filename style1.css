@@ -96,7 +96,99 @@ transition: all 200ms;
   padding-left: 13px;
   display: flex;
   flex-direction: column;
+
 }
+/**
+.menu-subtitle + .plats:nth-child(1){
+animation: appear 1s 50ms ease-out both;
+}
+.menu-subtitle :nth-child(2){
+  animation: appear 1s 50ms ease-out both;
+  }
+  .menu-subtitle + .plats:nth-child(2){
+    animation: appear 1s 100ms ease-out both;
+    }
+    .menu-subtitle :nth-child(3){
+      animation: appear 1s 100ms ease-out both;
+      }
+      .menu-subtitle + .plats:nth-child(3){
+        animation: appear 1s 150ms ease-out both;
+        }
+        .menu-subtitle :nth-child(4){
+          animation: appear 1s 150ms ease-out both;
+          }
+          .menu-subtitle + .plats:nth-child(4){
+            animation: appear 1s 200ms ease-out both;   
+            }
+            .menu-subtitle :nth-child(5){
+              animation: appear 1s 200ms ease-out both;
+              }
+              .menu-subtitle + .plats:nth-child(5){
+                animation: appear 1s 250ms ease-out both;   
+                }
+                .menu-subtitle :nth-child(6){
+                  animation: appear 1s 250ms ease-out both;
+                  }
+                  .menu-subtitle + .plats:nth-child(6){
+                    animation: appear 1s 300ms ease-out both;   
+                    }
+                    .menu-subtitle :nth-child(7){
+                      animation: appear 1s 300ms ease-out both;
+                      }
+                      .menu-subtitle + .plats:nth-child(6){
+                        animation: appear 1s 350ms ease-out both;   
+                        }
+                        .menu-subtitle :nth-child(7){
+                          animation: appear 1s 350ms ease-out both;
+                          }
+                          .menu-subtitle + .plats:nth-child(6){
+                            animation: appear 1s 400ms ease-out both;   
+                            }
+                            .menu-subtitle :nth-child(7){
+                              animation: appear 1s 400ms ease-out both;
+                              }
+                              .menu-subtitle + .plats:nth-child(7){
+                                animation: appear 1s 450ms ease-out both;   
+                                }
+                                .menu-subtitle :nth-child(8){
+                                  animation: appear 1s 450ms ease-out both;
+                                  }
+                                  .menu-subtitle + .plats:nth-child(8){
+                                    animation: appear 1s 500ms ease-out both;   
+                                    }
+                                    .menu-subtitle :nth-child(9){
+                                      animation: appear 1s 500ms ease-out both;
+                                      }
+                                      .menu-subtitle + .plats:nth-child(9){
+                                        animation: appear 1s 550ms ease-out both;   
+                                        }
+                                        .menu-subtitle :nth-child(10){
+                                          animation: appear 1s 550ms ease-out both;
+                                          }
+                                          .menu-subtitle + .plats:nth-child(10){
+                                            animation: appear 1s 600ms ease-out both;   
+                                            }
+                                            .menu-subtitle :nth-child(11){
+                                              animation: appear 1s 600ms ease-out both;
+                                              }
+                                              .menu-subtitle + .plats:nth-child(11){
+                                                animation: appear 1s 650ms ease-out both;   
+                                                }
+                                                .menu-subtitle :nth-child(12){
+                                                  animation: appear 1s 650ms ease-out both;
+                                                  }
+              
+@keyframes appear{
+    0% {
+        transform: translatey(20%);
+        opacity: 0;   
+    }
+   100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+  } **/
+
 .menu-subtitle h3 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -117,27 +209,37 @@ transition: all 200ms;
   flex-direction: row;
 justify-content: space-between;
 margin-bottom: 12px;
+overflow: hidden;
 }
 .intitulé {
   padding-left: 15px;
   width: 280px;
+
     /**box-sizing: border-box;**/
-    border: 1px solid white;
+   /** border: 1px solid white;
     margin: 0 auto;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    overflow: ellipsis; 
+    text-overflow: ellipsis; **/
 
 }
 
 .intitulé p {
+  /**width: 280px;**/
   font-size: 15.04px;
   font-weight: 300;
-  padding-bottom: 12px; 
+  padding-bottom: 12px;
+  border: 1px solid white;
+  margin: 0 auto;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 .intitulé h4 {
+
   padding-top: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -149,7 +251,7 @@ flex-direction: row;
 }
 
 .plats  :hover + .translate {
- transform: translateX(-45px);
+ transform: translateX(-59px);
   transition: transform 500ms;
 overflow: hidden;
 display: inline-flex;
@@ -172,6 +274,7 @@ padding-left: 10px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  padding-left: 9px;
   color: white;
   display: flex;
   justify-content: center;
@@ -191,6 +294,7 @@ padding-left: 10px;
 .check i {
   font-size: small;
   padding: 3px 4px ;
+  margin-right: 10px;
   border-radius: 9px;
   color: #99e2d0;
   background-color: white;
